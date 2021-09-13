@@ -3,6 +3,7 @@
     <div class="col-6 border px-4 py-4 shadow-lg ">
       <%= simple_form_for @list do |f| %>
         <%= f.input :name %>
+        <%= f.input :photo, as: :file %>
         <%= f.button :submit , class:"btn btn-primary" %>
       <% end %>
     </div>
