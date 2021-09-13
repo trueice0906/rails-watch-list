@@ -14,7 +14,8 @@
 
   <div class="row">
     <% @lists.each do |list| %>
-        <div class="col-12 col-sm-6 col-md-4 mb-3">
+        <div class="col-12 col-sm-6 col-md-4 mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @list.photo.key, height: 300, crop: :fill %>')">
+
         <%= link_to list_path(list), class:'text-decoration-none' do %>
             <div class="card-category" data-aos="zoom-in" >
               <%= list.name %>
